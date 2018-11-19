@@ -5,6 +5,7 @@
 char vivod();
 char add();
 char poisk(char *n);
+
 struct chitatelb
 {
 char fam[30]; 
@@ -17,8 +18,11 @@ struct chitatelb ch[30];
 int records;
 int i, j,k,k1;
 char n[20];
+
 int main()
-{setlocale(LC_ALL, "rus");FILE *f;
+{
+setlocale(LC_ALL, "rus");
+FILE *f;
     if(!(f = fopen("chitatelb.txt", "w+b"))) {
     printf("Невозможно создать файл\n");
     return 0;
